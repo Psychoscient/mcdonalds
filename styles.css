@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #202121;
+}
+
+/* navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px 20px 200px;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1F1E1F;
+}
+
+nav li, a, button {
+    color: #edf0f1;
+    font-weight: 600;
+}
+
+nav li {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+nav li:hover {
+    font-size: 1.05em;
+}
+
+.nav-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.apply-here button {
+    background-color: white;
+    color: #202121;
+    padding: 9px 25px;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.apply-here button:hover {
+    background-color: rgba(255,200,54, 1);
+    color:#edf0f1;
+}
+
+/* main content */
+
+.container-search {
+    width: 100%;
+    height: 20vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(255,200,54, 0.5), rgba(32,33,33,0.9)), url(mcdonalds_background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.search-bar-input {
+    width: 500px;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px;
+    backdrop-filter: blur(4px) saturate(1);
+}
+
+.search-button-img {
+    width: 1em;
+    height: 1em;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.search-bar ::placeholder {
+    margin-left: 1em;
+    color: white;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
